@@ -1,0 +1,228 @@
+{
+ "_about": "Recorded seeds of the reported runs. Each seed is a parameter of the script named in its section; see docs/RANDOM_DRAWS.md. Values written as strings with the prefix 0x are hexadecimal integers.",
+ "samples (cast/setting.py)": {
+  "fit_permutation": "0x13528ee",
+  "pool_permutation": "0x13528ef",
+  "cal_uniforms": 7,
+  "sel_uniforms": 8,
+  "score_model": 0,
+  "laet_regressor": 0
+ },
+ "resplits (pipeline/frontier.py --resplit-seed)": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "item pool (data/text_pool.py)": {
+  "pool_permutation": 0
+ },
+ "title queries (data/prepare_title_queries.py --set refit)": {
+  "permutation": 1900014855
+ },
+ "index updates": {
+  "new items (data/prepare_update_items.py --seed)": {
+   "amazon": 968572019,
+   "arxiv": 2079861226
+  },
+  "replaced slots (data/prepare_updated_bases.py --seed)": {
+   "amazon": 164228088,
+   "arxiv": 1826210509
+  },
+  "insertion levels (pipeline/build_graphs.py update --seed)": {
+   "amazon": 1075205510,
+   "arxiv": 2049732898
+  }
+ },
+ "graphs (pipeline/build_graphs.py hnsw --seed)": {
+  "amazon_A": 866159836,
+  "arxiv_A": 866159836,
+  "amazon_B": 744972238,
+  "arxiv_B": 744972238,
+  "yfcc10m": 94926219,
+  "youtube8m": 1236488918
+ },
+ "yfcc10m (data/prepare_yfcc10m.py)": {
+  "split": 2090873961,
+  "official_split": [
+   1550168123,
+   414748336
+  ]
+ },
+ "youtube8m (data/prepare_youtube8m.py)": {
+  "shards": 8161741155825784349,
+  "split": 1859506485
+ },
+ "common target bootstrap (pipeline/common_target.py --seed)": {
+  "k10_kappa1": {
+   "amazon_A": 360928315,
+   "amazon_B": 104066838,
+   "arxiv_A": 832258306,
+   "arxiv_B": 104308520
+  },
+  "k10_kappa2": {
+   "amazon_A": 1522294183,
+   "arxiv_A": 989305394
+  },
+  "k10_unconstrained": {
+   "amazon_A": 673637328,
+   "arxiv_A": 13466739
+  },
+  "vamana": {
+   "amazon": 175307109,
+   "arxiv": 361482005
+  },
+  "title queries": {
+   "amazon_A": 19487254,
+   "arxiv_A": 939934268
+  },
+  "yfcc10m": {
+   "tags": 293633634,
+   "unconstrained": 1852160409,
+   "official": 484976561
+  },
+  "youtube8m": {
+   "entities": 1624280872,
+   "unconstrained": 1256281484
+  },
+  "recall target 0.9": {
+   "amazon_A": 1282111919,
+   "amazon_B": 1495248145,
+   "arxiv_A": 1647710080,
+   "arxiv_B": 1858666467
+  }
+ },
+ "distance-adaptive bootstrap (baselines/distance_adaptive.py calibrate --seed)": {
+  "k10_kappa1": {
+   "amazon_A": 396436122,
+   "amazon_B": 617700024,
+   "arxiv_A": 82055672,
+   "arxiv_B": 1992764085
+  },
+  "k10_kappa2": {
+   "amazon_A": 1492228236,
+   "arxiv_A": 710617975
+  },
+  "recall target 0.9": {
+   "amazon_A": 1818310444,
+   "amazon_B": 1746464820,
+   "arxiv_A": 1547844387,
+   "arxiv_B": 1863741118
+  },
+  "k10_unconstrained": {
+   "amazon_A": 1503096895,
+   "arxiv_A": 736544522
+  },
+  "vamana": {
+   "amazon": 1274654702,
+   "arxiv": 66139246
+  },
+  "yfcc10m": {
+   "tags": 690378728,
+   "unconstrained": 148134221,
+   "official": 867939300
+  },
+  "youtube8m": {
+   "entities": 2086885997,
+   "unconstrained": 1980319086
+  },
+  "title queries": {
+   "amazon_A": 409210656,
+   "arxiv_A": 1306051833
+  }
+ },
+ "levels bootstrap (baselines/levels.py --seed; level groups 0.01-0.03, 0.04-0.06, 0.07-0.10)": {
+  "amazon_A": [
+   350267489,
+   1072392063,
+   1999518660
+  ],
+  "amazon_B": [
+   495734224,
+   46749071,
+   1002935347
+  ],
+  "arxiv_A": [
+   1556097536,
+   989341589,
+   1457279540
+  ],
+  "arxiv_B": [
+   122394615,
+   592980840,
+   299595782
+  ]
+ },
+ "darth (baselines/darth.py)": {
+  "regressor": 0,
+  "forest_check": 0,
+  "report --seed": {
+   "amazon": 1726052678,
+   "arxiv": 769134099
+  }
+ },
+ "darth+ (baselines/darth_plus.py)": {
+  "regressors": 0,
+  "forest_check": 0,
+  "report --seed": {
+   "amazon": 1207146141,
+   "arxiv": 394627324
+  },
+  "compare --seed": {
+   "amazon": 303682605,
+   "arxiv": 118077128
+  }
+ },
+ "learned policies (baselines/learned_policies.py)": {
+  "models": 0,
+  "cal_halves": "0x13528f0",
+  "crossfit": "0x13528f1",
+  "subsamples": "0x13528f2",
+  "subsample_crossfit": "0x13528f3",
+  "bootstrap": 1
+ },
+ "threshold curve (baselines/threshold_curve.py --split-seed)": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "drift signal (analysis/drift_signal.py --seed)": "0x13528f3",
+ "timing bootstrap (timing/time_rules.py window --seed)": {
+  "windows 1 and 2": 0,
+  "window 3": {
+   "amazon": 5392337270486950629,
+   "arxiv": 2044015271982866979
+  },
+  "window 4": {
+   "amazon": 2323460136693915647,
+   "arxiv": 537168968883106647
+  }
+ },
+ "short list (timing/short_list.py)": {
+  "calibrate --seed": {
+   "yfcc10m": 2029968942,
+   "amazon_hold": 1124647655,
+   "arxiv_hold": 2048718251
+  },
+  "time --seed": {
+   "yfcc10m": 1942499709,
+   "yfcc10m_list2048": 640375004,
+   "amazon_hold": 413869110,
+   "arxiv_hold": 1066157808
+  }
+ },
+ "online replay check (timing/time_rules.py check-replay --log-seed)": 1
+}

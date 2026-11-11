@@ -1,0 +1,17 @@
+# Files produced by building and running the package. None of them belongs in the repository.
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Engine build output and the hnswlib checkout (engine/README.md)
+/engine/build/
+/engine/third_party/
+
+# Default locations of the prepared data and of graphs, logs and results (reproduce/main_setting.sh)
+/data/*/
+/work/
+
+# System files
+.DS_Store
+docs/techreport.pdf

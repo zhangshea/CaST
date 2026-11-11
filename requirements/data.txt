@@ -1,0 +1,9 @@
+# Data preparation: text embedding, exact answers, Vamana graph (paper Section VI-A, Datasets).
+numpy==1.26.4
+scipy
+numba
+torch
+transformers
+pyarrow
+orjson
+diskannpy==0.7.0
