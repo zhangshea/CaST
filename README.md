@@ -113,3 +113,16 @@ python tables/table2.py "arXiv, A"=$WORK/results/k10_kappa1/arxiv_A
 
 The code is released under the MIT License (`LICENSE`). `THIRD_PARTY_NOTICES.md` lists the one function derived from
 third-party source code and the libraries, data sets and models that the package uses but does not include.
+
+## Reference
+```
+@misc{zhang2026calibratedearlyterminationbounded,
+      title={Calibrated Early Termination with Bounded Optimality Gaps for Constrained Vector Search}, 
+      author={Xinyu Zhang and Jingze Li and Baihua Zheng and Weiwei Sun},
+      year={2026},
+      eprint={2611.16148},
+      archivePrefix={arXiv},
+      primaryClass={cs.DB},
+      url={https://arxiv.org/abs/2611.16148}, 
+}
+```
